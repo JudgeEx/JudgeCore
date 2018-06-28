@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+find_package(RapidJSON REQUIRED)
+include_directories(${RapidJSON_INCLUDE_DIRS})
+link_libraries(ShLwApi.Lib)
+add_executable(ConsoleRunner ConsoleRunner_win.c config_loader.cpp make_output.cpp)
